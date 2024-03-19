@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  background: #111111;
+  color: #FFFFFF;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+footer {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #ff2b2b;
+}
+
+nav {
+  position: fixed;
+  top: 0; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  right: 0; /* Adjust as needed */
+  background: #000000;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+nav .nav-bar {
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav .nav-bar .logo a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav .nav-bar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-links li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav .nav-links a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  color: #FF2B2B;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  max-width: 66.6%;
+  margin: auto;
+  padding: 2rem;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem; /* Add margin-bottom to separate from the next wrapper */
+  margin-top: 2rem; /* Add margin-top to separate from the previous wrapper */
+  
+}
+
+.social-links {
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+  z-index: -100;
+}
+
+.social-links img:hover {
+  transition: all 0.3s ease;
+  
+  transform: scale(1.2); 
+
+}
+
+.project {
+  max-width: 1440px;
+  margin: auto;
+  padding: 3rem 0;
+  line-height: 1.5;
+  background-color: #FF2B2B;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.project:hover {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem; /* Add margin-bottom to separate from the next project */
+  margin-top: 2rem; /* Add margin-top to separate from the previous project */
+  transition: all 0.3s ease;
+  color:#000000;
+}
+
+.skill-item {
+  transition: transform 0.3s; /* Smooth transition effect */
+  z-index: -100;
+}
+
+.skill-item:hover {
+  transform: scale(0.9); /* Zoom effect on hover */
+}
+
+.progress-bar {
+  width: 100px; /* Adjust the width of the progress bar */
+  height: 20px; /* Adjust the height of the progress bar */
+  background-color: #FF2B2B; /* Background color of the progress bar */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 5px; /* Adjust spacing */
+  overflow: hidden; /* Ensure progress does not overflow */
+  position: relative; /* Position relative for absolute positioning of progress fill */
+
+  
+  width: 66.6%;
+  float: right;
+  background-color: #e2e2e2;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #FF2B2B; /* Color of the filled portion */
+  border-radius: 5px; /* Maintain rounded corners */
+  transition: width 0.3s ease-in-out; /* Smooth transition effect */
+  position: absolute; /* Position absolute to fill the container */
+  top: 0;
+  left: 0;
+}
